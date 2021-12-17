@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DentalClean</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <div class="logo">
+                <img src="imagens/tooth.png" alt="Dente" class="imagem-logo" height="100px">
+            </div>
+            <div class="titulo-logo">
+                <h1>DentalClean</h1>
+                <h2>Sorria com a gente</h2>
+            </div>
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Escolha a unidade" />
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="apresentacao">
+            <div class="caixa-apresentacao">
+                <h1 class="titulo-apresentacao">BEM VINDO!</h1>
+                <h2 class="subtitulo-apresentacao">SOBRE NÓS</h2>
+                <p class="paragrafo-apresentacao">Lorem ipsum dolor sit amet,<br> 
+                    consectetur adipiscing elit, <br>
+                    sed do eiusmod tempor incididunt ut <br>
+                    labore et dolore magna aliqua <br>
+                </p>
+                <button class="btn-leia-mais">Leia Mais</button>
+                <img class="imagem-apresentacao" src="imagens/dentista.png" alt="dentista" title="apresentação">
+            </div>
+        </div>
+        <div class="especialidades">
+            <div class="caixa-especialidades">
+                <h1 class="titulo-especialidades">Especialidades</h1>
+                <h2 class="subtitulo-especialidades">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h2>
+                <ul class="lista-especialidades">
+                    <li>
+                        <h2>Especialidade</h2>
+                        <img class="imagem-especialidades-es" src="imagens/dental-care (1).png">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit<br>
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Especialidade</h2>
+                        <img class="imagem-especialidades-dr" src="imagens/cadeira-de-dentista.png">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit<br>
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Especialidade</h2>
+                        <img class="imagem-especialidades-es" src="imagens/teeth-brushing.png">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit<br>
+                        </p>
+                    </li>
+                    <li>
+                        <h2>Especialidade</h2>
+                        <img class="imagem-especialidades-dr" src="imagens/dental-care.png">
+                        <p>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit<br>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="agendamento">
+            <div class="caixa-agendamentos">
+                <h1 class="titulo-agendamentos">Agendamento</h1>
+                <form class="formulario">
+                    <input type="text" id="nome" name="nome" placeholder="Nome (EX: Silva Silva)" class="input-padrao" >
+                    <input type="text" id="email" name="email" placeholder="Email: (Ex:email@gmail.com)" class="input-padrao" >
+                    <input type="tel" id="telefone" name="telefone" placeholder="Telefone: (Ex: 92992929292)" class="input-padrao">
+                    <select class="input-padrao" id="unidade">
+                        <option>Unidade:</option>
+                        <option>Centro</option>
+                        <option>Sul</option>
+                        <option>Norte</option>
+                    </select>
+                    <input type="date" id="data" name="data" placeholder="Data" class="input-padrao">
+                    <input type="time" id="horario" name="horario" placeholder="Horário" class="input-padrao">
+                    <input type="submit" id="enviar" value="Enviar" class="input-padrao" onclick="validaForm()">
+                </form>
+            </div>
+        </div>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="imagens/slide 1.jpg" width="940px" height="300px" alt="...">
+                <div class="text">Destaque 1</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="imagens/slide 2.jpg" width="940px" height="300px" alt="...">
+                <div class="text">Destaque 2</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="imagens/slide 3.jpg" width="940px" height="300px" alt="...">
+                <div class="text">Destaque 3</div>
+            </div>
+    
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+    <footer>
+        <div class="informacoes">
+            <div class="menu-info">
+                <h1>Menu</h1>
+                <ul class="lista-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Serviços</a></li>
+                    <li><a href="index.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="contato-info">
+                <h1>Contato</h1>
+                <div class="fone-contato">
+                    <img class="imagem-fone" src="imagens/phone-solid.svg" width="15px"> 
+                    <p>0929999999</p>
+                </div>
+                <div class="email-contato">
+                    <img class="imagem-email" src="imagens/envelope-solid.svg" alt="Email" width="15px">
+                    <p>email@gmail.com</p>
+                </div>
+            </div>
+            <div class="social-info">
+                <h1>Social</h1>
+                <ul class="imagens-social">
+                    <a href="#"><img src="imagens/facebook-square-brands.svg" width="20px"></a>
+                    <a href="#"><img src="imagens/instagram-square-brands.svg" width="20px"></a>
+                    <a href="#"><img src="imagens/twitter-square-brands.svg" width="20px"></a>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h1>Copyright DentalClean - 2021</h1>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
